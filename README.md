@@ -50,6 +50,8 @@ function(a,b) {
 
 ### 2.2.5 尽可能使用箭头函数
 
+### 2.2.6 使用模版字符串
+
 # 3.注释
 ## 3.1多行注释
 
@@ -106,4 +108,8 @@ import Select from "./components/Select";
 import { fetchUser } from "../../actions/test";
 
 ```
+# 7. 不要使用switch case， 用 hashmap 代替
+
+# 8. 尽量
+
 
