@@ -86,3 +86,24 @@ const a = 1; // a is constant
 ## 5.2 增加TODO，并在之后尽快解决
 
 ## 5.3 如果是一个错误的，不合理的警告，提给主管，让其协助解决。
+
+# 6.模块
+## 6.1 添加模块
+增加一个模块之前要确认没有可以重用的对应模块。（你可以在util或者components中翻一翻）。
+## 6.2 引入模块
+引入模块要遵循以下格式
+
+每个类型之后空一行，类型包括但不限于 外部依赖（react，ant），actions，compoents，style, utils
+
+```js
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+
+// components
+import Select from "./components/Select";
+
+// actions
+import { fetchUser } from "../../actions/test";
+
+```
+
