@@ -110,6 +110,19 @@ import { fetchUser } from "../../actions/test";
 ```
 # 7. 不要使用switch case， 用 hashmap 代替
 
-# 8. 尽量
+# 8. 尽量不要使用this，如果确实需要，使用前需要bind，如果是jsx，要使用autobind-decorator
+
+```jsx
+import autobind from "autobind-decorator";
+class Entry extends Component {
+   @autobind
+   handleClick() {
+     this.setState({
+       count: this.state.count ++
+     })
+   }
+}
+
+```
 
 
